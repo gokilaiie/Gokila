@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-12T19:02:31 AEST" name="Surefire suite" finished-at="2024-07-12T19:03:15 AEST" duration-ms="43944">
+    <groups>
+    </groups>
+    <test started-at="2024-07-12T19:02:31 AEST" name="Surefire test" finished-at="2024-07-12T19:03:15 AEST" duration-ms="43944">
+      <class name="sales.qa.testcases.SalesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="setup" finished-at="2024-07-12T19:02:48 AEST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateTitle()[pri:1, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="ValidateTitle" finished-at="2024-07-12T19:02:48 AEST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="setup" finished-at="2024-07-12T19:02:48 AEST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateTransactionTitle()[pri:2, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="ValidateTransactionTitle" finished-at="2024-07-12T19:02:48 AEST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTransactionTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="setup" finished-at="2024-07-12T19:02:48 AEST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateTransacList()[pri:3, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:48 AEST" name="ValidateTransacList" finished-at="2024-07-12T19:02:57 AEST" duration-ms="8774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTransacList -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:57 AEST" name="setup" finished-at="2024-07-12T19:02:57 AEST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateInquiriesTitle()[pri:4, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:57 AEST" name="ValidateInquiriesTitle" finished-at="2024-07-12T19:02:57 AEST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInquiriesTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:57 AEST" name="setup" finished-at="2024-07-12T19:02:57 AEST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateInquiriesList()[pri:5, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:02:57 AEST" name="ValidateInquiriesList" finished-at="2024-07-12T19:03:14 AEST" duration-ms="16421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateInquiriesList -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="setup" finished-at="2024-07-12T19:03:14 AEST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateCustomRptstitle()[pri:6, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="ValidateCustomRptstitle" finished-at="2024-07-12T19:03:14 AEST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCustomRptstitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="setup" finished-at="2024-07-12T19:03:14 AEST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateStdRptsTitle()[pri:7, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="ValidateStdRptsTitle" finished-at="2024-07-12T19:03:14 AEST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateStdRptsTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="setup" finished-at="2024-07-12T19:03:14 AEST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateMaintenceTitle()[pri:8, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="ValidateMaintenceTitle" finished-at="2024-07-12T19:03:14 AEST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMaintenceTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="setup" finished-at="2024-07-12T19:03:14 AEST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateMaintenanceList()[pri:9, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="ValidateMaintenanceList" finished-at="2024-07-12T19:03:14 AEST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMaintenanceList -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sales.qa.testcases.SalesTest@6a01e23]" started-at="2024-07-12T19:03:14 AEST" name="teardown" finished-at="2024-07-12T19:03:15 AEST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sales.qa.testcases.SalesTest -->
+      <class name="sales.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:31 AEST" name="setup" finished-at="2024-07-12T19:02:36 AEST" duration-ms="4701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPageTitleTest()[pri:1, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:36 AEST" name="LoginPageTitleTest" finished-at="2024-07-12T19:02:36 AEST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitleTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:36 AEST" name="setup" finished-at="2024-07-12T19:02:40 AEST" duration-ms="4519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LogoTest()[pri:2, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:40 AEST" name="LogoTest" finished-at="2024-07-12T19:02:40 AEST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:40 AEST" name="setup" finished-at="2024-07-12T19:02:46 AEST" duration-ms="5708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:3, instance:sales.qa.testcases.LoginTest@3d299e3]" started-at="2024-07-12T19:02:46 AEST" name="Login" finished-at="2024-07-12T19:02:48 AEST" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- sales.qa.testcases.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

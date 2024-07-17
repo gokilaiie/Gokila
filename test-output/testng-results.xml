@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-16T20:56:08 AEST" name="WEBERP Automation Test Suite" finished-at="2024-07-16T20:56:34 AEST" duration-ms="25706">
+    <groups>
+    </groups>
+    <test started-at="2024-07-16T20:56:08 AEST" name="WEBERP Test Cases" finished-at="2024-07-16T20:56:34 AEST" duration-ms="25706">
+      <class name="sales.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:08 AEST" name="setup" finished-at="2024-07-16T20:56:15 AEST" duration-ms="6922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPageTitleTest()[pri:1, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:15 AEST" name="LoginPageTitleTest" finished-at="2024-07-16T20:56:15 AEST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:15 AEST" name="teardown" finished-at="2024-07-16T20:56:16 AEST" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:16 AEST" name="setup" finished-at="2024-07-16T20:56:21 AEST" duration-ms="5877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LogoTest()[pri:2, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:21 AEST" name="LogoTest" finished-at="2024-07-16T20:56:22 AEST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:22 AEST" name="teardown" finished-at="2024-07-16T20:56:22 AEST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:22 AEST" name="setup" finished-at="2024-07-16T20:56:30 AEST" duration-ms="7836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:3, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:30 AEST" name="Login" finished-at="2024-07-16T20:56:32 AEST" duration-ms="2550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sales.qa.testcases.LoginTest@639c2c1d]" started-at="2024-07-16T20:56:32 AEST" name="teardown" finished-at="2024-07-16T20:56:34 AEST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sales.qa.testcases.LoginTest -->
+    </test> <!-- WEBERP Test Cases -->
+  </suite> <!-- WEBERP Automation Test Suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+sales\qa\pages\LoginPage.class
+sales\qa\base\TestBase.class
+sales\qa\pages\SalesPage.class
+sales\qa\util\TestUtil.class
