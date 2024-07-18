@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sales.qa.testcases.ReceivablesTest">
+      <class name="sales.qa.testcases.SetupTest">
         <methods>
           <include name="teardown"/>
+          <include name="ValidateReceivablesorPayablesList"/>
           <include name="setup"/>
-          <include name="ValidateTransacList"/>
+          <include name="ValidateInventorySetupList"/>
         </methods>
-      </class> <!-- sales.qa.testcases.ReceivablesTest -->
+      </class> <!-- sales.qa.testcases.SetupTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

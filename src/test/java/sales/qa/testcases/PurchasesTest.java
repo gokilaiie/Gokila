@@ -29,13 +29,15 @@ public class PurchasesTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		ReceivablesPage = new ReceivablesPage();
-		PurchasePage =new PurchasesPage();
-		PayablesPage = new PayablesPage();
+		
+		
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		ReceivablesPage = new ReceivablesPage();
 		PurchasePage = ReceivablesPage.ClickPurchase();
+		PayablesPage = new PayablesPage();
 		System.out.println("BeforeMethod");
 	}
 	

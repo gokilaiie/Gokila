@@ -90,7 +90,8 @@ public class PayablesPage extends TestBase
 	public void PayablesVerifyInquiriesList()
 	{
 		List<String> ActualList = Arrays.asList("Where Allocated Inquiry","Aged Vendor Report","Payment Run Report","Remittance Advices","Outstanding GRNs Report",
-												"Vendor Balances At A Prior Month End"," List Daily Transactions","Vendor Transaction Inquiries");
+												"Vendor Balances At A Prior Month End"," List Daily Transactions","Vendor Transaction Inquiries","Standard Reports and Forms",
+												"There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListPayables.size()!=0)
 		{

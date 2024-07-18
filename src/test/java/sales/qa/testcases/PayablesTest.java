@@ -16,7 +16,7 @@ public class PayablesTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
+	
 	PurchasesPage PurchasePage;
 	PayablesPage PayablesPage;
 	InventoryPage inventoryPage;
@@ -30,14 +30,14 @@ public class PayablesTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		PurchasePage =new PurchasesPage();
-		PayablesPage = new PayablesPage();
-		inventoryPage = new InventoryPage();
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		PurchasePage =new PurchasesPage();
 		PayablesPage = PurchasePage.ClickPayables();
+		inventoryPage = new InventoryPage();
+		
 		System.out.println("BeforeMethod");
 	}
 	

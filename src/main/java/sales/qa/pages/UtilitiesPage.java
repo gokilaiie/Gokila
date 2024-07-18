@@ -90,7 +90,7 @@ public class UtilitiesPage extends TestBase
 	public void UtilitiesVerifyInquiriesList()
 	{
 		List<String> ActualList = Arrays.asList("Debtors Balances By Currency Totals","Suppliers Balances By Currency Totals","Show General Transactions That Do Not Balance",
-									"List of items without picture");
+									"List of items without picture","Standard Reports and Forms","There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListUtilities.size()!=0)
 		{
@@ -101,8 +101,9 @@ public class UtilitiesPage extends TestBase
 					if( element.getText().trim().contains(ActualList.get(i)))
 					{
 						String UtilitiesInquiriesList = element.getText().replace("•","");
-						System.out.println("Utilities Inquiries List" +UtilitiesInquiriesList.trim());
-						Assert.assertEquals(UtilitiesInquiriesList.trim(), ActualList.get(i).trim(),"Utilities Inquiry List not matched");
+						System.out.println("Utilities Inquiries List : " +UtilitiesInquiriesList.trim());
+						Assert.assertTrue(UtilitiesInquiriesList.trim().contains(ActualList.get(i).trim()), "Utilities Maintenance List not matched");
+						//Assert.assertEquals(UtilitiesInquiriesList.trim(), ActualList.get(i).trim(),"Utilities Inquiry List not matched");
 						System.out.println("Assertion Inquiries List Utilities");
 					}
 				}

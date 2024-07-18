@@ -1,5 +1,7 @@
 package sales.qa.testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +12,7 @@ import sales.qa.pages.LoginPage;
 import sales.qa.pages.PurchasesPage;
 import sales.qa.pages.ReceivablesPage;
 import sales.qa.pages.SalesPage;
+import sales.qa.util.TestUtil;
 
 public class ReceivablesTest extends TestBase 
 {
@@ -23,16 +26,20 @@ public class ReceivablesTest extends TestBase
 		super();
 	}
 	
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		ReceivablesPage = new ReceivablesPage();
-		PurchasePage =new PurchasesPage();
+		
+	
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
 		ReceivablesPage = SalesPage.ClickReceivables();
+		PurchasePage =new PurchasesPage();
 		System.out.println("BeforeMethod");
 	}
 	

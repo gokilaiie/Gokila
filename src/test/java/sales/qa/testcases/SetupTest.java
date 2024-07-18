@@ -16,13 +16,7 @@ public class SetupTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
-	//PurchasesPage PurchasePage;
-	//PayablesPage PayablesPage;
-	//InventoryPage InventoryPage;
-	//ManufacturingPage ManufacturingPage;
-	//GeneralLedgerPage GeneralLedger;
-	//AssetManagerPage AssetManager;
+	
 	PettyCashPage PettyCash;
 	SetupPage Setup;
 	UtilitiesPage Utilities;
@@ -36,20 +30,16 @@ public class SetupTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		//PurchasePage =new PurchasesPage();
-		//PayablesPage = new PayablesPage();
-		//InventoryPage = new InventoryPage();
-		//ManufacturingPage = new ManufacturingPage();
-		//GeneralLedger = new GeneralLedgerPage();
-		//AssetManager = new AssetManagerPage();
-		PettyCash = new PettyCashPage();
-		Setup = new SetupPage();
-		Utilities = new UtilitiesPage();
+		
+		
+	
+	
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		PettyCash = new PettyCashPage();
 		Setup = PettyCash.ClickSetup();
+		Utilities = new UtilitiesPage();
 		System.out.println("BeforeMethod");
 	}
 	

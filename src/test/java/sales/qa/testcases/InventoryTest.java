@@ -16,8 +16,7 @@ public class InventoryTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
-	//PurchasesPage PurchasePage;
+	
 	PayablesPage PayablesPage;
 	InventoryPage InventoryPage;
 	ManufacturingPage ManufacturingPage;
@@ -31,15 +30,14 @@ public class InventoryTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		//PurchasePage =new PurchasesPage();
-		PayablesPage = new PayablesPage();
-		InventoryPage = new InventoryPage();
-		ManufacturingPage = new ManufacturingPage();
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		PayablesPage = new PayablesPage();
 		InventoryPage = PayablesPage.ClickInventory();
+		
+		ManufacturingPage = new ManufacturingPage();
 		System.out.println("BeforeMethod");
 	}
 	

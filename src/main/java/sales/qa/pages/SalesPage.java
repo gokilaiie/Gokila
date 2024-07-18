@@ -101,7 +101,8 @@ public class SalesPage extends TestBase
 											"Daily Sales Inquiry","Sales By Sales Type Inquiry","Sales By Category Inquiry","Sales By Category By Item Inquiry",
 											"Sales Analysis Reports","Sales Graphs","Top Sellers Inquiry","Order Delivery Differences Report","Delivery In Full On Time (DIFOT) Report",
 											"Sales Order Detail Or Summary Inquiries","Top Sales Items Inquiry","Top Customers Inquiry","Worst Sales Items Report","Sales With Low Gross Profit Report",
-											"Sell Through Support Claims Report","Sales to Customers");
+											"Sell Through Support Claims Report","Sales to Customers","Standard Reports and Forms","There are no reports to show!",
+											"Custom Reports","There are no reports to show!");
 		
 		if (InquirieList.size()!=0)
 		{

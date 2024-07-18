@@ -16,11 +16,7 @@ public class AssetManagerTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
-	//PurchasesPage PurchasePage;
-	//PayablesPage PayablesPage;
-	//InventoryPage InventoryPage;
-	//ManufacturingPage ManufacturingPage;
+	
 	GeneralLedgerPage GeneralLedger;
 	AssetManagerPage AssetManager;
 	PettyCashPage PettyCash;
@@ -34,18 +30,16 @@ public class AssetManagerTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		//PurchasePage =new PurchasesPage();
-		//PayablesPage = new PayablesPage();
-		//InventoryPage = new InventoryPage();
-		//ManufacturingPage = new ManufacturingPage();
-		GeneralLedger = new GeneralLedgerPage();
-		AssetManager = new AssetManagerPage();
-		PettyCash = new PettyCashPage();
+		
+		
+		
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		GeneralLedger = new GeneralLedgerPage();
 		AssetManager = GeneralLedger.ClickAssetManagr();
+		PettyCash = new PettyCashPage();
 		System.out.println("BeforeMethod");
 	}
 	

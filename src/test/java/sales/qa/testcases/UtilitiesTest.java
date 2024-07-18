@@ -27,11 +27,12 @@ public class UtilitiesTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		Setup = new SetupPage();
-		Utilities = new UtilitiesPage();
+	
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		Setup = new SetupPage();
 		Utilities = Setup.ClickUtilities();
 		System.out.println("BeforeMethod");
 	}

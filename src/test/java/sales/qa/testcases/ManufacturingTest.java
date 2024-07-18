@@ -16,9 +16,7 @@ public class ManufacturingTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
-	//PurchasesPage PurchasePage;
-	//PayablesPage PayablesPage;
+	
 	InventoryPage InventoryPage;
 	ManufacturingPage ManufacturingPage;
 	GeneralLedgerPage GeneralLedger;
@@ -33,16 +31,16 @@ public class ManufacturingTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		//PurchasePage =new PurchasesPage();
-		//PayablesPage = new PayablesPage();
-		InventoryPage = new InventoryPage();
-		ManufacturingPage = new ManufacturingPage();
-		GeneralLedger = new GeneralLedgerPage();
+		
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		InventoryPage = new InventoryPage();
 		ManufacturingPage = InventoryPage.ClickManufacturing();
+		
+		
+		GeneralLedger = new GeneralLedgerPage();
 		System.out.println("BeforeMethod");
 	}
 	

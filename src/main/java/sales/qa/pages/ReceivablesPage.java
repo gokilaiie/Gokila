@@ -92,7 +92,8 @@ public class ReceivablesPage extends TestBase
 	{
 		List<String> InList = Arrays.asList("Where Allocated Inquiry","Print Invoices or Credit Notes","Print Statements","Aged Customer Balances/Overdues Report",
 										"Re-Print A Deposit Listing","Debtor Balances At A Prior Month End",
-										"Customer Listing By Area/Salesperson","List Daily Transactions","Customer Transaction Inquiries","Customer Activity and Balances");
+										"Customer Listing By Area/Salesperson","List Daily Transactions","Customer Transaction Inquiries","Customer Activity and Balances",
+										"Standard Reports and Forms","There are no reports to show!","Custom Reports","There are no reports to show!");
 		
 		if(InquiriesListReceivables.size()!=0)
 		{

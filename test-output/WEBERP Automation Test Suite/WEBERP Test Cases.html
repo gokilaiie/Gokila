@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>WEBERP Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>101/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 16 20:56:08 AEST 2024</td>
+<td>Started on:</td><td>Wed Jul 17 16:48:10 AEST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25706 ms)</td>
+<tr><td>Total time:</td><td>1199 seconds (1199709 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,59 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td><div><pre>java.lang.AssertionError: Inventory Inquiry List not matched expected [Inventory Valuation Report] but found [Mail Inventory Valuation Report]
+	at sales.qa.pages.InventoryPage.InventoryVerifyInquiriesList(InventoryPage.java:113)
+	at sales.qa.testcases.InventoryTest.ValidateInquiriesList(InventoryTest.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1678338625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678338625'><pre>java.lang.AssertionError: Inventory Inquiry List not matched expected [Inventory Valuation Report] but found [Mail Inventory Valuation Report]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at sales.qa.pages.InventoryPage.InventoryVerifyInquiriesList(InventoryPage.java:113)
+	at sales.qa.testcases.InventoryTest.ValidateInquiriesList(InventoryTest.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +129,510 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sales.qa.testcases.LoginTest.LogoTest()'><b>LogoTest</b><br>Test class: sales.qa.testcases.LoginTest</td>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
 <td></td>
 <td>0</td>
-<td>sales.qa.testcases.LoginTest@639c2c1d</td></tr>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>3</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.LoginTest.Login()'><b>Login</b><br>Test class: sales.qa.testcases.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.LoginTest@34e9fd99</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>2</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateReceivablesorPayablesList()'><b>ValidateReceivablesorPayablesList</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>5</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>8</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>8</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateInventorySetupList()'><b>ValidateInventorySetupList</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>3</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>2</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>3</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
 <tr>
 <td title='sales.qa.testcases.LoginTest.LoginPageTitleTest()'><b>LoginPageTitleTest</b><br>Test class: sales.qa.testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>sales.qa.testcases.LoginTest@639c2c1d</td></tr>
+<td>sales.qa.testcases.LoginTest@34e9fd99</td></tr>
 <tr>
-<td title='sales.qa.testcases.LoginTest.Login()'><b>Login</b><br>Test class: sales.qa.testcases.LoginTest</td>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateGeneralSetupList()'><b>ValidateGeneralSetupList</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>4</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.LoginTest.LogoTest()'><b>LogoTest</b><br>Test class: sales.qa.testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.LoginTest@34e9fd99</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>3</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>3</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.InventoryTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.InventoryTest@3d285d7e</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>10</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.PurchasesTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.PurchasesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PurchasesTest@26794848</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>4</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.SalesTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.SalesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SalesTest@4e08711f</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.ReceivablesTest.ValidateStdRptsTitle()'><b>ValidateStdRptsTitle</b><br>Test class: sales.qa.testcases.ReceivablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ReceivablesTest@bcec361</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateGeneralSetupOptionsTitile()'><b>ValidateGeneralSetupOptionsTitile</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateTitle()'><b>ValidateTitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateInquiriesList()'><b>ValidateInquiriesList</b><br>Test class: sales.qa.testcases.PayablesTest</td>
 <td></td>
 <td>2</td>
-<td>sales.qa.testcases.LoginTest@639c2c1d</td></tr>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateMaintenceTitle()'><b>ValidateMaintenceTitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateReceivablesorPayablesTitle()'><b>ValidateReceivablesorPayablesTitle</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.ManufacturingTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.ManufacturingTest</td>
+<td></td>
+<td>1</td>
+<td>sales.qa.testcases.ManufacturingTest@40005471</td></tr>
+<tr>
+<td title='sales.qa.testcases.SetupTest.ValidateInventorySetupTitle()'><b>ValidateInventorySetupTitle</b><br>Test class: sales.qa.testcases.SetupTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.SetupTest@ba2f4ec</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateTransacList()'><b>ValidateTransacList</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.PettyCashTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.PettyCashTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PettyCashTest@49438269</td></tr>
+<tr>
+<td title='sales.qa.testcases.UtilitiesTest.ValidateInquiriesTitle()'><b>ValidateInquiriesTitle</b><br>Test class: sales.qa.testcases.UtilitiesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.UtilitiesTest@1c1bbc4e</td></tr>
+<tr>
+<td title='sales.qa.testcases.GeneralLedgerTest.ValidateTransactionTitle()'><b>ValidateTransactionTitle</b><br>Test class: sales.qa.testcases.GeneralLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.GeneralLedgerTest@2cd76f31</td></tr>
+<tr>
+<td title='sales.qa.testcases.AssetManagerTest.ValidateMaintenanceList()'><b>ValidateMaintenanceList</b><br>Test class: sales.qa.testcases.AssetManagerTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.AssetManagerTest@367ffa75</td></tr>
+<tr>
+<td title='sales.qa.testcases.PayablesTest.ValidateCustomRptstitle()'><b>ValidateCustomRptstitle</b><br>Test class: sales.qa.testcases.PayablesTest</td>
+<td></td>
+<td>0</td>
+<td>sales.qa.testcases.PayablesTest@302552ec</td></tr>
 </table><p>
 </body>
 </html>

@@ -89,7 +89,8 @@ public class AssetManagerPage extends TestBase
 			
 	public void AssetManagerVerifyInquiriesList()
 	{
-		List<String> ActualList = Arrays.asList("Asset Register","My Maintenance Schedule","Maintenance Reminder Emails");
+		List<String> ActualList = Arrays.asList("Asset Register","My Maintenance Schedule","Maintenance Reminder Emails","Standard Reports and Forms",
+				"There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListAssetManager.size()!=0)
 		{
@@ -128,7 +129,7 @@ public class AssetManagerPage extends TestBase
 			
 	public void AssetManagerMaintenanceList()
 	{
-		List<String> MaintList = Arrays.asList(" Fixed Asset Category Maintenance","Add or Maintain Asset Locations","Fixed Asset Maintenance Tasks");
+		List<String> MaintList = Arrays.asList("Fixed Asset Category Maintenance","Add or Maintain Asset Locations","Fixed Asset Maintenance Tasks");
 		
 		if(MaintListAssetManager.size()!=0)
 		{

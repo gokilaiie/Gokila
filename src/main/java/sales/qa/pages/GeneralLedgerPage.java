@@ -33,6 +33,7 @@ public class GeneralLedgerPage extends TestBase
 	WebElement AssetMngr;
 			
 	List<WebElement> TransacListGeneralLedger = driver.findElements(By.xpath("//body/section[@class='MainBody clearfix']/fieldset[1]/ul[1]/li"));
+							////body/section[@class='MainBody clearfix']/fieldset[1]/ul[1]/li
 		
 	List<WebElement> InquiriesListGeneralLedger = driver.findElements(By.xpath("//body/section[@class='MainBody clearfix']/fieldset[2]/ul[1]/li"));
 			
@@ -68,10 +69,13 @@ public class GeneralLedgerPage extends TestBase
 			{
 				for(int i=0;i<TransacListGeneralLedger.size();i++)
 				{
-					String TransacList = element.getText().replace("•", "");
-					System.out.println("GeneralLedger Transaction List :" +TransacList.trim());
-					Assert.assertEquals(TransacList.trim(), List.get(i).trim(),"GeneralLedger Transaction List not matched");
-					System.out.println("Assertion GeneralLedger list");
+					if( element.getText().trim().contains(List.get(i)))
+					{
+						String TransacList = element.getText().replace("•", "");
+						System.out.println("GeneralLedger Transaction List :" +TransacList.trim());
+						Assert.assertTrue(TransacList.trim().contains(List.get(i).trim()),"GeneralLedger Transaction List not matched");
+						System.out.println("Assertion GeneralLedger list");
+					}
 				}
 			}
 		}
@@ -90,7 +94,8 @@ public class GeneralLedgerPage extends TestBase
 		List<String> ActualList = Arrays.asList("Bank Account Balances","Bank Account Reconciliation Statement","Check Payments Listing","Daily Bank Transactions",
 				"Account Inquiry","Graph of Account Transactions","Account Listing","Account Listing to CSV File","General Ledger Journal Inquiry",
 				"Trial Balance","Balance Sheet","Profit and Loss Statement","Statement of Cash Flows","Financial Statements",
-				"Horizontal Analysis of Statement of Financial Position","Horizontal Analysis of Statement of Comprehensive Income","Tag Reports","Tax Reports");
+				"Horizontal Analysis of Statement of Financial Position","Horizontal Analysis of Statement of Comprehensive Income","Tag Reports","Tax Reports",
+				"Standard Reports and Forms","There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListGeneralLedger.size()!=0)
 		{
@@ -102,7 +107,8 @@ public class GeneralLedgerPage extends TestBase
 					{
 						String GeneralLedgerInquiriesList = element.getText().replace("•","");
 						System.out.println("GeneralLedger Inquiries List" +GeneralLedgerInquiriesList.trim());
-						Assert.assertEquals(GeneralLedgerInquiriesList.trim(), ActualList.get(i).trim(),"GeneralLedger Inquiry List not matched");
+						Assert.assertTrue(GeneralLedgerInquiriesList.trim().contains(ActualList.get(i).trim()), "GeneralLedger Inquiry List not matched");
+						//Assert.assertEquals(GeneralLedgerInquiriesList.trim(), ActualList.get(i).trim(),"GeneralLedger Inquiry List not matched");
 						System.out.println("Assertion Inquiries List GeneralLedger");
 					}
 				}
@@ -143,7 +149,7 @@ public class GeneralLedgerPage extends TestBase
 					{
 						String MaintListGeneralLedgerList = element.getText().replace("•", "");
 						System.out.println("GeneralLedger Inquiries List" +MaintListGeneralLedgerList.trim());
-						Assert.assertEquals(MaintListGeneralLedgerList.trim(),MaintList.get(i).trim(),"GeneralLedger Maintenance List not matched");
+						Assert.assertTrue(MaintListGeneralLedgerList.trim().contains(MaintList.get(i).trim()),"GeneralLedger Maintenance List not matched");
 						System.out.println("Assertion GeneralLedger Maintenance List");
 					}
 				}

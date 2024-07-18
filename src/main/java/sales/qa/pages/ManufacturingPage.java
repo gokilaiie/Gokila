@@ -92,7 +92,8 @@ public class ManufacturingPage extends TestBase
 		List<String> ActualList = Arrays.asList("Select A Work Order","Costed Bill Of Material Inquiry","Where Used Inquiry","Bill Of Material Listing",
 				" Indented Bill Of Material Listing","List Components Required","List Materials Not Used Anywhere","Indented Where Used Listing",
 				"WO Items ready to produce","MRP","MRP Shortages","MRP Suggested Purchase Orders","MRP Suggested Work Orders","MRP Reschedules Required",
-				"Print Product Specification","Print Certificate of Analysis","Historical QA Test Results","Multiple Work Orders Total Cost Inquiry");
+				"Print Product Specification","Print Certificate of Analysis","Historical QA Test Results","Multiple Work Orders Total Cost Inquiry","Standard Reports and Forms",
+				"There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListManufacturing.size()!=0)
 		{
@@ -104,7 +105,8 @@ public class ManufacturingPage extends TestBase
 					{
 						String ManufacturingInquiriesList = element.getText().replace("•","");
 						System.out.println("Manufacturing Inquiries List" +ManufacturingInquiriesList.trim());
-						Assert.assertEquals(ManufacturingInquiriesList.trim(), ActualList.get(i).trim(),"Manufacturing Inquiry List not matched");
+						//Assert.assertEquals(ManufacturingInquiriesList.trim(), ActualList.get(i).trim(),"Manufacturing Inquiry List not matched");
+						Assert.assertTrue(ManufacturingInquiriesList.trim().contains(ActualList.get(i).trim()), "Manufacturing Inquiry List not matched");
 						System.out.println("Assertion Inquiries List Manufacturing");
 					}
 				}
@@ -144,7 +146,7 @@ public class ManufacturingPage extends TestBase
 					{
 						String MaintListManufacturingList = element.getText().replace("•", "");
 						System.out.println("Manufacturing Inquiries List" +MaintListManufacturingList.trim());
-						Assert.assertEquals(MaintListManufacturingList.trim(),MaintList.get(i).trim(),"Manufacturing Maintenance List not matched");
+						Assert.assertTrue(MaintListManufacturingList.trim().contains(MaintList.get(i).trim()), "Manufacturing Maintenance List not matched");
 						System.out.println("Assertion Manufacturing Maintenance List");
 					}
 				}

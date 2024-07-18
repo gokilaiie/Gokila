@@ -16,10 +16,7 @@ public class GeneralLedgerTest extends TestBase
 {
 	LoginPage LoginPage;
 	SalesPage SalesPage;
-	//ReceivablesPage ReceivablesPage;
-	//PurchasesPage PurchasePage;
-	//PayablesPage PayablesPage;
-	//InventoryPage InventoryPage;
+	
 	ManufacturingPage ManufacturingPage;
 	GeneralLedgerPage GeneralLedger;
 	AssetManagerPage AssetManager;
@@ -34,17 +31,16 @@ public class GeneralLedgerTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		//ReceivablesPage = new ReceivablesPage();
-		//PurchasePage =new PurchasesPage();
-		//PayablesPage = new PayablesPage();
-		//InventoryPage = new InventoryPage();
-		ManufacturingPage = new ManufacturingPage();
-		GeneralLedger = new GeneralLedgerPage();
-		AssetManager = new AssetManagerPage();
+		
+		
+		
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		ManufacturingPage = new ManufacturingPage();
 		GeneralLedger = ManufacturingPage.ClickGnrlLedger();
+		AssetManager = new AssetManagerPage();
 		System.out.println("BeforeMethod");
 	}
 	

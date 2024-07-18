@@ -91,7 +91,8 @@ public class PurchasesPage extends TestBase
 		public void PurchasesVerifyInquiriesList()
 		{
 			List<String> ActualList = Arrays.asList("Purchase Order Inquiry","Purchase Order Detail Or Summary Inquiries","Vendor Price List",
-													"Purchases from Suppliers");
+													"Purchases from Suppliers","Standard Reports and Forms","There are no reports to show!","Custom Reports",
+													"There are no reports to show!");
 														
 			if(InquiriesListPurchases.size()!=0)
 			{

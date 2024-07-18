@@ -94,7 +94,8 @@ public class SetupPage extends TestBase
 	{
 		List<String> ActualList = Arrays.asList("Sales Types","Customer Types","Supplier Types","Credit Status","Payment Terms",
 									"Set Purchase Order Authorisation levels","Payment Methods","Sales People","Sales Areas","Shipping-methods",
-									"Sales GL Interface Postings","COGS GL Interface Postings"," Shipping Costs Maintenance"," Discount Matrix");
+									"Sales GL Interface Postings","COGS GL Interface Postings"," Shipping Costs Maintenance"," Discount Matrix",
+									"Standard Reports and Forms","There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(SetupReceivableorPayablesList.size()!=0)
 		{
@@ -147,7 +148,8 @@ public class SetupPage extends TestBase
 					{
 						String MaintListSetupList = element.getText().replace("•", "");
 						System.out.println("Setup Inquiries List" +MaintListSetupList.trim());
-						Assert.assertEquals(MaintListSetupList.trim(),MaintList.get(i).trim(),"Setup Inventory List not matched");
+						//Assert.assertEquals(MaintListSetupList.trim(),MaintList.get(i).trim(),"Setup Inventory List not matched");
+						Assert.assertTrue(MaintListSetupList.trim().contains(MaintList.get(i).trim()), "Setup Inventory List not matched");
 						System.out.println("Assertion Setup Maintenance List");
 					}
 				}

@@ -25,10 +25,12 @@ public class SalesTest extends TestBase
 	public void setup()
 	{
 		initialization();
-		SalesPage = new SalesPage();
+		
 		LoginPage = new LoginPage();
-		ReceivablesPage = new ReceivablesPage();
+		
 		SalesPage = LoginPage.Login(prop.getProperty("username"), prop.getProperty("password"));
+		
+		ReceivablesPage = new ReceivablesPage();
 		System.out.println("BeforeMethod");
 	}
 	

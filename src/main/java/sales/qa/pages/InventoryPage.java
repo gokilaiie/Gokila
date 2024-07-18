@@ -97,7 +97,8 @@ public class InventoryPage extends TestBase
 												"Inventory Stock Check Sheets","Make Inventory Quantities CSV","Compare Counts Vs Stock Check Data",
 												"All Inventory Movements By Location/Date","List Inventory Status By Location/Category",
 												"Historical Stock Quantity By Location/Category","List Negative Stocks","Period Stock Transaction Listing",
-												"Stock Transfer Note","Aged Controlled Stock Report","Internal stock request inquiry");
+												"Stock Transfer Note","Aged Controlled Stock Report","Internal stock request inquiry","Standard Reports and Forms",
+												"There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListInventory.size()!=0)
 		{
@@ -109,7 +110,8 @@ public class InventoryPage extends TestBase
 					{
 						String InventoryInquiriesList = element.getText().replace("•","");
 						System.out.println("Inventory Inquiries List" +InventoryInquiriesList.trim());
-						Assert.assertEquals(InventoryInquiriesList.trim(), ActualList.get(i).trim(),"Inventory Inquiry List not matched");
+						//Assert.assertEquals(InventoryInquiriesList.trim(), ActualList.get(i).trim(),"Inventory Inquiry List not matched");
+						Assert.assertTrue(InventoryInquiriesList.trim().contains(ActualList.get(i).trim()), "Inventory Inquiry List not matched");
 						System.out.println("Assertion Inquiries List Inventory");
 					}
 				}

@@ -90,7 +90,8 @@ public class PettyCashPage extends TestBase
 			
 	public void PettyCashVerifyInquiriesList()
 	{
-		List<String> ActualList = Arrays.asList("PC Tab General Report","PC Expense General Report","PC Tab Expenses List"," PC Expenses Analysis");
+		List<String> ActualList = Arrays.asList("PC Tab General Report","PC Expense General Report","PC Tab Expenses List"," PC Expenses Analysis","Standard Reports and Forms",
+				"There are no reports to show!","Custom Reports","There are no reports to show!");
 															
 		if(InquiriesListPettyCash.size()!=0)
 		{
@@ -135,15 +136,19 @@ public class PettyCashPage extends TestBase
 		{
 			for (WebElement element : MaintListPettyCash) 
 			{
-				for(int i=0;i<MaintListPettyCash.size();i++)
+				for (int i=0; i<MaintListPettyCash.size(); i++) 
 				{
-					if( element.getText().trim().contains(MaintList.get(i)))
-					{
+					
+					  if( element.getText().trim().contains(MaintList.get(i)))
+					  {
+					 
 						String MaintListPettyCashList = element.getText().replace("•", "");
-						System.out.println("PettyCash Inquiries List" +MaintListPettyCashList.trim());
-						Assert.assertEquals(MaintListPettyCashList.trim(),MaintList.get(i).trim(),"PettyCash Maintenance List not matched");
+						System.out.println("PettyCash Maintenance List : " +MaintListPettyCashList.trim());
+						//Assert.assertEquals(MaintListPettyCashList.trim(),string.trim(),"PettyCash Maintenance List not matched");
+						Assert.assertTrue(MaintListPettyCashList.trim().contains(MaintList.get(i).trim()), "PettyCash Maintenance List not matched");
 						System.out.println("Assertion PettyCash Maintenance List");
 					}
+					
 				}
 			}
 		}

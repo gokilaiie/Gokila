@@ -6,8 +6,10 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import sales.qa.util.TestUtil;
 
@@ -38,8 +40,15 @@ public class TestBase
 		String browsername = prop.getProperty("browser");
 		if(browsername.equals("chrome"))
 		{
-			System.setProperty("driver.webdriver.chromedriver","C:\\Users\\gokil\\Documents\\lib\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("driver.webdriver.chromedriver", "C:\\Users\\gokil\\Documents\\lib\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe" );
+			ChromeOptions option=new ChromeOptions();
+			option.setPageLoadStrategy(PageLoadStrategy.NONE);
+			driver = new ChromeDriver(option);
+			/*
+			 * System.setProperty("driver.webdriver.chromedriver",
+			 * "C:\\Users\\gokil\\Documents\\lib\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"
+			 * ); driver = new ChromeDriver();
+			 */
 						
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
